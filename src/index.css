@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #090D16;
+    --bg-card: #0F172A;
+    --bg-card-hover: #131E35;
+    --text-primary: #F8FAFC;
+    --text-muted: #94A3B8;
+    --accent-gold: #D4AF37;
+    --accent-gold-light: #F3E5AB;
+    --border-subtle: rgba(248, 250, 252, 0.08);
+    --border-gold: rgba(212, 175, 55, 0.25);
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: #090D16;
+    color: #F8FAFC;
+    font-family: 'Raleway', 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-display {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Raleway', 'Roboto', sans-serif;
+  }
+}
+
+/* Hairline borders & subtle reflections */
+.border-hairline {
+  border: 1px solid rgba(248, 250, 252, 0.09);
+}
+
+.border-hairline-gold {
+  border: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+/* Luxury card backgrounds */
+.bg-noir-card {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(9, 13, 22, 0.95) 100%);
+  backdrop-filter: blur(12px);
+}
+
+.bg-noir-elevated {
+  background: linear-gradient(135deg, rgba(20, 30, 52, 0.9) 0%, rgba(12, 18, 30, 0.95) 100%);
+}
+
+/* Gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F3E5AB 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 50%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090D16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Bola Tattoo | Estúdio de Tatuagem Autoral & Piercing",
+  "description": "Estúdio de alta precisão especializado em tatuagens autorais, Blackwork, Realismo, Fineline, fechamentos e body piercing com máxima higiene e excelência.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
